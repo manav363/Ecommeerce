@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.navbar{
+    height: 70px;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: larger;
+    width: 150px;
+}
+
+.logo span{
+    color: rgb(18, 119, 234);
+}
+
+.nav-tools{
+    width: 400px;
+}
+
+.nav-tools a{
+    font-size: medium;
+    color: rgb(78, 77, 77);
+    border: none;
+    background-color: whitesmoke;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.nav-tools a:hover{
+    color: rgb(18, 119, 234);
+    font-size: xx-large;
+}
+
+.nav-search{
+    width: 400px;
+}
+
+.nav-search input{
+    width: 300px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+}
+
+.nav-search button{
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: rgb(18, 119, 234);
+    border-radius: 30px;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-search button:hover{
+    background-color: rgb(16, 109, 215);;
+    font-size: large;
+    text-decoration: none;
+}
+
+.nav-icons a{
+    width: 80px;
+    height: 50px;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    color: black;
+    transition: 0.3s;
+    margin-left: 7px;
+    text-decoration: none;
+}
+
+.nav-icons a:hover{
+    color: rgb(18, 119, 234);
+    font-size: xx-large;
+}
+
+.hero{
+    background-image: url("images/HH.jpeg");
+    width: 1505px;
+    height: 640px;
+    align-items: center;
+}
+
+.hero-message{
+    font-size: 50px;
+    font-weight: bolder;
+    color: black;
+    margin-left: 10px;
+}
+
+.hero-message span{
+    color: rgb(18, 119, 234);
+}
+
+.hero p{
+    margin-left: 10px;
+}
+
+.hero button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: rgb(18, 119, 234);
+    border-radius: 5px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.product {
+  padding: 3rem 5%;
+  text-align: center;
+}
+
+h2{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 40px;
+}
+
+h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.product-grid {
+  display: grid;
+  gap: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 10px 10px 8px rgba(4, 4, 4, 0.08);
+  width: 400px;
+  margin-left: 10px;
+}
+
+.card p{
+    text-align: center;
+}
+
+.card img{
+    margin-left: 70px;
+}
+
+.card h3{
+    color: rgb(18, 119, 234);
+}
+
+.footer{
+    background-color: rgb(35, 47, 62);
+    height: 250px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-logo{
+    align-items: center;
+    margin-top: 125px;
+    font-size: xx-large;
+    color: white;
+}
+
+.footer-tools{
+    margin-top: 80px;
+    width: 500px;
+    color: white
+}
+.footer-tools a{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    color: white;
+}
+
+.footer-contact{
+    margin-top: 80px;
+    width: 200px;
+    text-align: center;
+    color: white;
+}
+
+.footer-contact p{
+    margin-top: 5px;
+    color: white;
+}
+
+.discount{
+    background-color: rgb(49, 67, 88);
+    height: 50px;
+    font-size: larger;
+    padding: 13px;
+    color: white;
+}
+
+.discount marquee:hover{
+    color: aqua;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 130px
+}
