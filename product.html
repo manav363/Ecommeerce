@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - UrbenShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section with Navigation -->
+    <header>
+        <!-- Navigation bar with logo and links to all pages -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>UrbenShop</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-container">
+                <!-- Large image for the product -->
+                <div class="product-image">
+                    <img id="mainImage" src="images/product1.jpg" alt="Luxury Gold Watch">
+                </div>
+                
+                <!-- Product title, price, description, and "Add to Cart" button -->
+                <div class="product-info">
+                    <h1 id="productName">Luxury Gold Watch</h1>
+                    <p class="price" id="productPrice">$299.99</p>
+                    <div class="product-description">
+                        <h3>Description</h3>
+                        <p id="productDesc">Experience luxury and elegance with our premium gold watch. Crafted with the finest materials and precision engineering, this timepiece is perfect for those who appreciate fine craftsmanship. Features a gold-plated case, genuine leather strap, and water-resistant design.</p>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Luxury Gold Watch', 299.99)">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Related products section -->
+            <div class="related-products">
+                <h2>Related Products</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="images/product2.jpg" alt="Designer Handbag">
+                        <h3>Designer Handbag</h3>
+                        <p class="price">$199.99</p>
+                        <a href="product.html?id=2" class="btn">View Details</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/product3.jpg" alt="Premium Sunglasses">
+                        <h3>Premium Sunglasses</h3>
+                        <p class="price">$149.99</p>
+                        <a href="product.html?id=3" class="btn">View Details</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/product6.jpg" alt="Silver Watch">
+                        <h3>Silver Watch</h3>
+                        <p class="price">$399.99</p>
+                        <a href="product.html?id=6" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with links and contact info -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>UrbenShop</h3>
+                <p>Your destination for luxury goods and premium products.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@urbenshop.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Luxury Ave, Premium City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 UrbenShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - UrbenShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section with Navigation -->
+    <header>
+        <!-- Navigation bar with logo and links to all pages -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>UrbenShop</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            
+            <!-- List added products -->
+            <div class="cart-container">
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be populated by JavaScript -->
+                    <div class="empty-cart" id="emptyCartMessage">
+                        <p>Your cart is empty</p>
+                        <a href="shop.html" class="btn">Continue Shopping</a>
+                    </div>
+                </div>
+                
+                <!-- Cart Summary and Checkout Button -->
+                <div class="cart-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Shipping</span>
+                        <span id="shipping">$0.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Tax</span>
+                        <span id="tax">$0.00</span>
+                    </div>
+                    <div class="summary-line"></div>
+                    <div class="summary-item total">
+                        <span>Total</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                    
+                    <!-- Checkout button -->
+                    <a href="checkout.html" class="btn checkout-btn" id="checkoutBtn" style="display: none;">Proceed to Checkout</a>
+                    <a href="shop.html" class="btn continue-shopping">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with links and contact info -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>UrbenShop</h3>
+                <p>Your destination for luxury goods and premium products.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@urbenshop.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Luxury Ave, Premium City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 UrbenShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbenShop - Luxury Shopping Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>UrbenShop</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1>Exclusive Luxury Collection</h1>
+                    <p>Discover our premium collection of designer goods</p>
+                    <a href="shop.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Summer Sale Up To 50% Off</h1>
+                    <p>Exclusive deals on premium products</p>
+                    <a href="shop.html" class="btn">View Deals</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>New Arrivals</h1>
+                    <p>Explore the latest luxury items</p>
+                    <a href="shop.html" class="btn">Browse Collection</a>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+                <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/product1.jpg" alt="Luxury Watch">
+                    <h3>Luxury Gold Watch</h3>
+                    <p class="price">$299.99</p>
+                    <a href="product.html?id=1" class="btn">View Details</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/product2.jpg" alt="Designer Handbag">
+                    <h3>Designer Handbag</h3>
+                    <p class="price">$199.99</p>
+                    <a href="product.html?id=2" class="btn">View Details</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/product3.jpg" alt="Sunglasses">
+                    <h3>Premium Sunglasses</h3>
+                    <p class="price">$149.99</p>
+                    <a href="product.html?id=3" class="btn">View Details</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/product4.jpg" alt="Perfume">
+                    <h3>Luxury Perfume</h3>
+                    <p class="price">$89.99</p>
+                    <a href="product.html?id=4" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="categories">
+        <div class="container">
+            <h2>Shop By Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="images/category1.jpg" alt="Watches">
+                    <h3>Watches</h3>
+                    <a href="shop.html?category=watches" class="btn">Shop</a>
+                </div>
+                <div class="category-card">
+                    <img src="images/category2.jpg" alt="Bags">
+                    <h3>Bags</h3>
+                    <a href="shop.html?category=bags" class="btn">Shop</a>
+                </div>
+                <div class="category-card">
+                    <img src="images/category3.jpg" alt="Accessories">
+                    <h3>Accessories</h3>
+                    <a href="shop.html?category=accessories" class="btn">Shop</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="special-offers">
+        <div class="container">
+            <h2>Special Offers</h2>
+            <div class="offer-card">
+                <h3>Summer Sale - Up to 50% Off</h3>
+                <p>Exclusive deals on premium collection items</p>
+                <a href="shop.html" class="btn">Shop Sale</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>UrbenShop</h3>
+                <p>Your destination for luxury goods and premium products.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@urbenshop.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Luxury Ave, Premium City</p>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe to get special offers and updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 UrbenShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - UrbenShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section with Navigation -->
+    <header>
+        <!-- Navigation bar with logo and links to all pages -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>UrbenShop</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search and Filter Section -->
+    <section class="search-filter">
+        <div class="container">
+            <h1>Our Collection</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search products...">
+                <button onclick="searchProducts()">Search</button>
+            </div>
+            <div class="filter-options">
+                <select id="categoryFilter" onchange="filterProducts()">
+                    <option value="all">All Categories</option>
+                    <option value="watches">Watches</option>
+                    <option value="bags">Bags</option>
+                    <option value="jewelry">Jewelry</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+                <select id="priceFilter" onchange="filterProducts()">
+                    <option value="all">All Prices</option>
+                    <option value="low">Under $100</option>
+                    <option value="medium">$100 - $300</option>
+                    <option value="high">Over $300</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section class="shop-products">
+        <div class="container">
+            <!-- Products will be displayed in a grid layout -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="watches" data-price="299.99">
+                    <img src="images/product1.jpg" alt="Luxury Gold Watch">
+                    <h3>Luxury Gold Watch</h3>
+                    <p class="price">$299.99</p>
+                    <a href="product.html?id=1" class="btn">View Details</a>
+                    <button class="add-to-cart-btn" onclick="addToCart('Luxury Gold Watch', 299.99)">Add to Cart</button>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" data-category="bags" data-price="199.99">
+                    <img src="images/product2.jpg" alt="Designer Handbag">
+                    <h3>Designer Handbag</h3>
+                    <p class="price">$199.99</p>
+                    <a href="product.html?id=2" class="btn">View Details</a>
+                    <button class="add-to-cart-btn" onclick="addToCart('Designer Handbag', 199.99)">Add to Cart</button>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" data-category="accessories" data-price="149.99">
+                    <img src="images/product3.jpg" alt="Premium Sunglasses">
+                    <h3>Premium Sunglasses</h3>
+                    <p class="price">$149.99</p>
+                    <a href="product.html?id=3" class="btn">View Details</a>
+                    <button class="add-to-cart-btn" onclick="addToCart('Premium Sunglasses', 149.99)">Add to Cart</button>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card" data-category="accessories" data-price="89.99">
+                    <img src="images/product4.jpg" alt="Luxury Perfume">
+                    <h3>Luxury Perfume</h3>
+                    <p class="price">$89.99</p>
+                    <a href="product.html?id=4" class="btn">View Details</a>
+                    <button class="add-to-cart-btn" onclick="addToCart('Luxury Perfume', 89.99)">Add to Cart</button>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card" data-category="jewelry" data-price="499.99">
+                    <img src="images/product5.jpg" alt="Diamond Necklace">
+                    <h3>Diamond Necklace</h3>
+                    <p class="price">$499.99</p>
+                    <a href="product.html?id=5" class="btn">View Details</a>
+                    <button class="add-to-cart-btn" onclick="addToCart('Diamond Necklace', 499.99)">Add to Cart</button>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card" data-category="watches" data-price="399.99">
+                    <img src="images/product6.jpg" alt="Silver Watch">
+                    <h3>Silver Watch</h3>
+                    <p class="price">$399.99</p>
+                    <a href="product.html?id=6" class="btn">View Details</a>
+                    <button class="add-to-cart-btn" onclick="addToCart('Silver Watch', 399.99)">Add to Cart</button>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="product-card" data-category="bags" data-price="249.99">
+                    <img src="images/product7.jpg" alt="Leather Tote">
+                    <h3>Leather Tote</h3>
+                    <p class="price">$249.99</p>
+                    <a href="product.html?id=7" class="btn">View Details</a>
+                    <button class="add-to-cart-btn" onclick="addToCart('Leather Tote', 249.99)">Add to Cart</button>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="product-card" data-category="accessories" data-price="79.99">
+                    <img src="images/product8.jpg" alt="Designer Belt">
+                    <h3>Designer Belt</h3>
+                    <p class="price">$79.99</p>
+                    <a href="product.html?id=8" class="btn">View Details</a>
+                    <button class="add-to-cart-btn" onclick="addToCart('Designer Belt', 79.99)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with links and contact info -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>UrbenShop</h3>
+                <p>Your destination for luxury goods and premium products.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@urbenshop.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Luxury Ave, Premium City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 UrbenShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
