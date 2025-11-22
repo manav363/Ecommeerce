@@ -1,143 +1,76 @@
-# capstone
+# UrbenShop
 
-# UrbenShop (README)
-
-## Live demo
-
-Deployed site: https://capstone-mocha-eight.vercel.app/
-
----
+**Live demo:** [https://capstone-mocha-eight.vercel.app/](https://capstone-mocha-eight.vercel.app/)
 
 ## Project Overview
 
-**UrbenShop** is a small e-commerce front-end demo that showcases a luxury shopping experience with featured products, categories, a promotions section, and basic navigation (Home, Shop, About, Contact, Cart).
+**UrbenShop** is an e-commerce front-end demo that showcases a luxury shopping experience with featured products, categories, a promotions section, and complete navigation.
 
 The live site includes promotional banners (e.g. "Summer Sale - Up to 50% Off"), a featured products section (watch, handbag, sunglasses, perfume), and a footer with contact information and newsletter subscription.
 
----
-
 ## Key Features
 
-- Landing / Home page with hero banner and call-to-action buttons
-- Featured products grid with product cards and "View Details" actions
-- Shop-by-category blocks (Watches, Bags, Accessories)
-- Promotions / Special offers section
-- Navigation: Home, Shop, About, Contact, Cart
-- Footer with contact information and newsletter subscribe form
+*   **Landing / Home page** with hero banner and call-to-action buttons
+*   **Featured products grid** with product cards and "View Details" actions
+*   **Shop-by-category blocks** (Watches, Bags, Accessories)
+*   **Product Details Page** with image, description, and add-to-cart option
+*   **Shopping Cart** and **Checkout** flows
+*   **Promotions / Special offers section**
+*   **Responsive Navigation**: Home, Shop, About, Contact, Cart
+*   **Footer** with contact information and newsletter subscribe form
 
----
+## Pages
 
-## Pages (as seen in the live site)
+*   **Home** (`index.html`) — Hero, featured products, categories, special offers
+*   **Shop** (`shop.html`) — Collection listing and product tiles
+*   **Product Details** (`product.html`) — Detailed view of individual products
+*   **Cart** (`cart.html`) — Shopping cart overview
+*   **Checkout** (`checkout.html`) — Order finalization page
+*   **About** (`about.html`) — Information about the brand
+*   **Contact** (`contact.html`) — Contact details and form
 
-- **Home** — hero, featured products, categories, special offers
-- **Shop** — collection listing and product tiles
-- **About** — information about the brand
-- **Contact** — contact details and a form
-- **Cart** — shopping cart overview
+## Tech
 
----
+*   **HTML5** — Semantic markup
+*   **CSS3** — Custom styling and responsive design
+*   **JavaScript** — Interactivity and DOM manipulation
 
-## Tech (assumptions & recommended checks)
+## Local Development
 
-The site is deployed on Vercel (capstone-mocha-eight.vercel.app). The exact tech stack is not directly visible from the rendered HTML. It likely uses standard web technologies (HTML/CSS/JavaScript) and may be built with a React/Next.js stack given the Vercel deployment, but you should inspect the project repository (package.json) to confirm.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/manav363/Ecommeerce.git
+    ```
 
----
+2.  **Open the project:**
+    *   Simply open `index.html` in your web browser.
+    *   OR use a live server extension (like "Live Server" in VS Code) to serve the files.
 
-## Local development (two approaches)
-
-### If the project is a Node/React/Next app (recommended)
-
-1. Clone the repository:
-
-```bash
-git clone <repo-url>
-cd <repo-folder>
-```
-
-2. Install dependencies:
-
-```bash
-npm install
-# or
-pnpm install
-# or
-yarn
-```
-
-3. Run development server:
-
-```bash
-npm run dev
-# or
-pnpm dev
-# or
-yarn dev
-```
-
-4. Build for production:
-
-```bash
-npm run build
-npm run start
-```
-
-### If the project is a static site (HTML/CSS/JS)
-
-1. Clone the repo and open `index.html` in a browser, or serve it with a static server:
-
-```bash
-npx http-server ./ -p 8080
-# or
-python3 -m http.server 8080
-```
-
----
-
-## Project structure (example)
+## Project Structure
 
 ```
-/ (project root)
-├─ public/           # static assets (images, fonts)
-├─ src/              # source files (components, pages, styles)
-├─ pages/            # (if Next.js) page routes
-├─ styles/           # global and component styles
-├─ package.json
-└─ README.md
+Ecommeerce/
+├── css/              # Stylesheets
+├── images/           # Product images and assets
+├── javascript/       # Script files
+├── index.html        # Home page
+├── shop.html         # Product listing
+├── product.html      # Product details
+├── cart.html         # Shopping cart
+├── checkout.html     # Checkout page
+├── about.html        # About us
+├── contact.html      # Contact page
+└── README.md         # Project documentation
 ```
-
----
-
-## Accessibility & Improvements (suggestions)
-
-- Add `alt` text on all images and ensure semantic HTML for better accessibility
-- Improve form validation and error states on the contact/newsletter forms
-- Add product detail pages and persistent cart state (localStorage or backend)
-- Implement responsive image sizes and lazy-loading for performance
-- Add unit/integration tests for key UI components
-
----
-
-## Deployment
-
-- The site is currently deployed to Vercel. To deploy yourself, connect the Git repository to Vercel and configure the build command (`npm run build` / `next build`) and output directory (if static) as needed.
-
----
 
 ## Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/my-feature`)
-3. Commit your changes and push to your fork
-4. Open a pull request describing your changes
-
----
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-Add a license file to the repository (e.g., MIT) or update this README with the chosen license.
-
----
+This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 
-For questions about this demo site, the footer on the live site lists contact info (email: info@urbenshop.com).
+If you have any questions, please reach out via the contact form on the website or email `info@urbenshop.com`.
