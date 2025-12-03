@@ -1,7 +1,5 @@
 # UrbenShop
 
-**Live demo:** [https://capstone-mocha-eight.vercel.app/](https://capstone-mocha-eight.vercel.app/)
-
 ## Project Overview
 
 **UrbenShop** is an e-commerce front-end demo that showcases a luxury shopping experience with featured products, categories, a promotions section, and complete navigation.
